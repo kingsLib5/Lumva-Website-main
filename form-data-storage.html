@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stored Form Data</title>
+</head>
+<body>
+
+<div class="sidebar">
+    <img src="assets/logo.png" alt="Company Logo" height="50" class="mb-3">
+    <h3 class="fw-bolder">Submissions</h3>
+    <ul class="list-unstyled">
+        <li class="my-3"><a href="#" onclick="showTable('contact')">Contact Form</a></li>
+        <li class="my-3"><a href="#" onclick="showTable('modal')">Get in Touch</a></li>
+        <li class="my-3"><a href="#" onclick="showTable('newsletter')">Newsletter</a></li>
+    </ul>
+    <a href="#" class="btn btn-danger logout-button">Log Out</a>
+</div>
+
+<div class="content">
+    <h1 class="text-center">Stored Form Submissions</h1>
+    
+    <div id="tableContainer">
+        <h2>Select a form from the menu</h2>
+    </div>
+</div>
+
+<script>
+    function populateTable(data, formType) {
+        if (!data.length) {
+            return `<p>No submissions found.</p>`;
+        }
+
+        let tableHTML = `<table class="table table-striped">
+            <thead class="table-header">
+                <tr>
+                    ${Object.keys(data[0]).map(key => `<th>${key.charAt(0).toUpperCase() + key.slice(1)}</th>`).join('')}
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>`;
+
+        data.forEach(item => {
+            tableHTML += `<tr>
+                ${Object.values(item).map(value => `<td>${value}</td>`).join('')}
+                <td><button class="btn btn-danger btn-sm" onclick="deleteSubmission('${item._id}', '${formType}')">X</button></td>
+            </tr>`;
+        });
+
+        tableHTML += `</tbody></table>`;
+        return tableHTML;
+    }
+
+    function showTable(formType) {
+        fetch(`http://localhost:3000/submissions/${formType}`)
+            .then(response => response.json())
+            .then(data => {
+                const tableContainer = document.getElementById('tableContainer');
+                if (formType === 'contact') {
+                    tableContainer.innerHTML = `<h2>Contact Form Submissions</h2>` + populateTable(data, 'contact');
+                } else if (formType === 'modal') {
+                    tableContainer.innerHTML = `<h2>Get in Touch Submissions</h2>` + populateTable(data, 'modal');
+                } else if (formType === 'newsletter') {
+                    const newsletterData = data.map(item => ({ _id: item._id, email: item.email }));
+                    tableContainer.innerHTML = `<h2>Newsletter Subscriptions</h2>` + populateTable(newsletterData, 'newsletter');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    function deleteSubmission(id, formType) {
+        fetch(`http://localhost:3000/delete-submission/${id}`, {
+            method: 'DELETE',
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            showTable(formType);  // Refresh the table after deletion
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    window.onload = function() {
+        showTable('contact'); // Show contact form submissions by default
+    };
+</script>
+
+</body>
+</html>

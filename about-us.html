@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>About Lumva</title>
+</head>
+<body>
+  <div class="container-fluid px-4 my-2  brand-font">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top px-md-4">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo and name.png" alt="brand name and logo" height="15">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-5">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link active" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="our-services.html">Our Services</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark btn-sm mx-auto d-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET IN TOUCH</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="d-flex pt-5 justify-content-center">
+      <div class="line m-3"></div>
+      <h6 class="m-0 text-danger brand-font">Our Story</h6>
+    </div>
+    <div class="container text-center justify-content-center">
+      <h2 class="display-6 brand-font">Cutting-edge systems designed to revolutionize industries</h2>
+      <p class="small text-muted pt-3">Lumva is a beacon of precision and excellence in the realm of software development. Positioned at the crossroads of cutting-edge technology and rigorous professionalism, we are committed to delivering robust, scalable solutions that empower businesses in the digital age.
+      Our expertise centers around custom software development, offering a comprehensive range of services including web and mobile application development, enterprise solutions, and more. Our approach is both methodical and data-driven, meticulously crafted to address the unique challenges of your business. We deploy tailored solutions designed to boost operational efficiency, productivity, and scalability.
+      At Lumva, we continuously update our technological toolkit, integrating the latest advancements to ensure you gain a competitive edge in a rapidly evolving market.</div>
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col content">
+          <h3 class=" brand-font">Our Vision</h3>
+          <img class="rounded-5" src="assets/vision.jpg" height="300">
+          <p class="small pt-3">Our vision is to be the premier provider of innovative and reliable software solutions globally, setting the standard for quality, efficiency, and technological advancement. We aim to drive digital transformation across industries, enabling our clients to achieve unparalleled success in their respective fields.</p>
+        </div>
+        <div class="col content">
+          <h3 class=" brand-font">Our Mission</h3>
+          <img class="rounded-5" src="assets/mission.jpg" height="300">
+          <p class="small pt-3">Our mission is to deliver superior software solutions that are meticulously designed and executed to meet the specific needs of our clients. We strive to foster long-term partnerships by consistently exceeding expectations through our unwavering commitment to integrity, innovation, and professionalism.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col content">
+          <h3 class=" brand-font">Our Approach</h3>
+          <img class="rounded-5" src="assets/approach.jpg" height="300">
+          <p class="small pt-3">Our approach is founded on a systematic and analytical methodology designed to achieve optimal results. We begin by thoroughly understanding your business requirements and objectives. Our team conducts comprehensive research and analysis to identify the most effective solutions. We then develop a detailed project plan, incorporating milestones and deliverables to ensure transparency and accountability. Throughout the development process, we maintain rigorous quality control measures to ensure that every aspect of the solution meets our exacting standards. Upon completion, we provide ongoing support and maintenance to ensure the long-term success and stability of your solution.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark btn-sm mx-auto d-block mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET IN TOUCH</button>
+
+<!--get in touch-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <img src="assets/logo.png" alt="brand name" height="20">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p class="lead brand-font">Have a project idea?</p> 
+              <p class="h3 text-dark brand-font">Let's discuss it together.</p>
+              <div class="row mb-3">
+                  <div class="col">
+                      <label for="GIT-first-name" class="form-label">First name:</label>
+                      <input type="text" class="form-control" id="GIT-first-name" placeholder="First name" required>
+                  </div>
+                  <div class="col">
+                      <label for="GIT-last-name" class="form-label">Last name:</label>
+                      <input type="text" class="form-control" id="GIT-last-name" placeholder="Last name" required>
+                  </div>
+              </div>
+              <label for="GIT-email" class="form-label">Your Email Address:</label>
+              <input type="email" class="form-control" id="GIT-email" placeholder="e.g lumva@example.com" required>
+              <div class="mb-3">
+                  <label for="GIT-message" class="form-label">Your Message:</label>
+                  <textarea class="form-control" id="GIT-message" rows="3" required></textarea>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="GIT-checkbox" required>
+                  <label class="form-check-label" for="GIT-checkbox">By clicking the button you agree to our terms and conditions.</label>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-dark px-5" id="sendMessageBtn">Send Message</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-center text-center py-4">
+  <div class="flex-column">
+    <h1 class="fw-bolder text-dark py-3">
+      SUBSCRIBE TO OUR NEWSLETTER
+    </h1>
+    <p class="small">
+      Stay up-to-date with our latest news and exclusive offers by subscribing to our newsletter today!
+    </p>
+      <div class="input-container d-flex">
+          <input type="email" class="form-control" id="newsletter-email" placeholder="Your Email Address">
+          <button type="button" class="btn btn-dark ms-2 px-3" id="subscribeBtn">Subscribe</button>
+      </div>   
+  </div>     
+</div>
+
+  <!--footer-->
+  <div class="container-fluid py-2 bg-light-subtle text-dark">
+    <div class="container text-center-md">
+      <div class="row g-5 py-5">
+          <div class="col-md">
+              <img class="mb-2" src="assets/logo.png" alt="brand logo" height="30">
+              <p class="text-muted">We are dedicated to pioneering innovative solutions in technology. <br>Join us as we make the world a better place, one breakthrough at a time.</p>
+              <div>
+                <a href="https://www.instagram.com/trylumva?igsh=ODczd3Z4dXUzbmZ5&utm_source=qr" target="_blank"><img src="assets/instagram.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://www.threads.net/@trylumva?xmt=AQGzR6qqSWVgj0w0QGnYTeWyoGeL_ZUQqvlwGbc116IPmMg" target="_blank"><img src="assets/threads.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://x.com/trylumva?s=21" target="_blank"><img src="assets/twitter.png" alt="" height="15" class="mx-3"></a>
+                <a href="" target="_blank"><img src="assets/facebook.png" alt="" height="15" class="mx-3"></a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Company</p>
+              <div class="links">
+                <a href="about-us.html" class="text-muted">About Us</a><br>
+                <a href="our-services.html" class="text-muted">Our Services</a><br>
+                <a href="" class="text-muted">Terms & Conditions</a><br>
+                <a href="" class="text-muted">Help</a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Resources</p>
+              <div class="links">
+                <a href="" class="text-muted">Blog</a><br>
+                <a href="" class="text-muted">Academy</a><br>
+                <a href="" class="text-muted">Support</a><br>
+                <a href="" class="text-muted">Contact Us</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container text-dark text-center mt-4 copyright brand-font">
+      <p class="pt-3">Lumva &copy; 2024 Lumva</p>
+    </div>
+  </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

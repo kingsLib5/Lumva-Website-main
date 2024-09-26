@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Lumva</title>
+</head>
+<body>
+  <div class="container-fluid px-4 my-2 brand-font">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top px-md-4">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo and name.png" alt="brand name and logo" height="15">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-5">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="our-services.html">Our Services</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link active" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark btn-sm mx-auto d-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET IN TOUCH</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row m-3">
+    <div class="col-md-8">
+        <div class="p-5 pb-2">
+            <p class="h5 brand-font">Interested in connecting with us?</p>
+            <p class="lead">We'd be happy to assist you.</p>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="contact-first-name" class="form-label">First name:</label>
+                    <input type="text" class="form-control" id="contact-first-name" placeholder="First name" required>
+                </div>
+                <div class="col">
+                    <label for="contact-last-name" class="form-label">Last name:</label>
+                    <input type="text" class="form-control" id="contact-last-name" placeholder="Last name" required>
+                </div>
+            </div>
+            <label for="contact-email" class="form-label">Your Email Address:</label>
+            <input type="email" class="form-control" id="contact-email" placeholder="e.g lumva@example.com" required>
+            <div class="mb-3">
+                <label for="contact-message" class="form-label">Your Message:</label>
+                <textarea class="form-control" id="contact-message" rows="3" required></textarea>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-sm btn-dark ms-5" id="submitContactForm">Submit</button>
+        </div>
+    </div>
+  </div>
+    <div class="col-md-4 pt-5 contact-left">
+      <div class="m-5">
+        <div class="mt-md-5 pt-md-5">
+          <img src="assets/name.png" alt="" height="30">
+        </div>
+        <div class="pt-4">
+          <div>
+            <a href="tel:+2347061608478" class="text-decoration-none text-black">
+                <i class="fas fa-phone me-2"></i>+234 706 160 8478
+            </a>
+          </div>
+          <div>
+            <a href="mailto:trylumva@gmail.com" class="text-decoration-none text-black">
+                <i class="fas fa-envelope me-2"></i>trylumva@gmail.com
+            </a>
+          </div>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/trylumva?igsh=ODczd3Z4dXUzbmZ5&utm_source=qr" target="_blank"><img src="assets/instagram.png" alt="" height="15" class="me-2"></a>
+          <a href="https://www.threads.net/@trylumva?xmt=AQGzR6qqSWVgj0w0QGnYTeWyoGeL_ZUQqvlwGbc116IPmMg" target="_blank"><img src="assets/threads.png" alt="" height="15" class="mx-2"></a>
+          <a href="https://x.com/trylumva?s=21" target="_blank"><img src="assets/twitter.png" alt="" height="15" class="mx-2"></a>
+          <a href="" target="_blank"><img src="assets/facebook.png" alt="" height="15" class="mx-2"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+      <!--get in touch-->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="assets/logo.png" alt="brand name" height="20">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead brand-font">Have a project idea?</p> 
+                    <p class="h3 text-dark brand-font">Let's discuss it together.</p>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="GIT-first-name" class="form-label">First name:</label>
+                            <input type="text" class="form-control" id="GIT-first-name" placeholder="First name" required>
+                        </div>
+                        <div class="col">
+                            <label for="GIT-last-name" class="form-label">Last name:</label>
+                            <input type="text" class="form-control" id="GIT-last-name" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <label for="GIT-email" class="form-label">Your Email Address:</label>
+                    <input type="email" class="form-control" id="GIT-email" placeholder="e.g lumva@example.com" required>
+                    <div class="mb-3">
+                        <label for="GIT-message" class="form-label">Your Message:</label>
+                        <textarea class="form-control" id="GIT-message" rows="3" required></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="GIT-checkbox" required>
+                        <label class="form-check-label" for="GIT-checkbox">By clicking the button you agree to our terms and conditions.</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark px-5" id="sendMessageBtn">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="container d-flex justify-content-center text-center py-4">
+          <div class="flex-column">
+            <h1 class="fw-bolder text-dark py-3">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </h1>
+            <p class="small">
+              Stay up-to-date with our latest news and exclusive offers by subscribing to our newsletter today!
+            </p>
+              <div class="input-container d-flex">
+                  <input type="email" class="form-control" id="newsletter-email" placeholder="Your Email Address">
+                  <button type="button" class="btn btn-dark ms-2 px-3" id="subscribeBtn">Subscribe</button>
+              </div>   
+          </div>     
+        </div>
+
+  <!--footer-->
+  <div class="container-fluid py-2 bg-light-subtle text-dark">
+    <div class="container text-center-md">
+      <div class="row g-5 py-5">
+          <div class="col-md">
+              <img class="mb-2" src="assets/logo.png" alt="brand logo" height="30">
+              <p class="text-muted">We are dedicated to pioneering innovative solutions in technology. <br>Join us as we make the world a better place, one breakthrough at a time.</p>
+              <div>
+                <a href="https://www.instagram.com/trylumva?igsh=ODczd3Z4dXUzbmZ5&utm_source=qr" target="_blank"><img src="assets/instagram.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://www.threads.net/@trylumva?xmt=AQGzR6qqSWVgj0w0QGnYTeWyoGeL_ZUQqvlwGbc116IPmMg" target="_blank"><img src="assets/threads.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://x.com/trylumva?s=21" target="_blank"><img src="assets/twitter.png" alt="" height="15" class="mx-3"></a>
+                <a href="" target="_blank"><img src="assets/facebook.png" alt="" height="15" class="mx-3"></a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Company</p>
+              <div class="links">
+                <a href="about-us.html" class="text-muted">About Us</a><br>
+                <a href="our-services.html" class="text-muted">Our Services</a><br>
+                <a href="" class="text-muted">Terms & Conditions</a><br>
+                <a href="" class="text-muted">Help</a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Resources</p>
+              <div class="links">
+                <a href="" class="text-muted">Blog</a><br>
+                <a href="" class="text-muted">Academy</a><br>
+                <a href="" class="text-muted">Support</a><br>
+                <a href="" class="text-muted">Contact Us</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container text-dark text-center mt-4 copyright brand-font">
+      <p class="pt-3">Lumva &copy; 2024 Lumva</p>
+    </div>
+  </div>
+
+      
+      <script src="bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>

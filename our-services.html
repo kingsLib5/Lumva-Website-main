@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lumva Services</title>
+</head>
+<body>
+  <div class="container-fluid px-4 my-2 brand-font">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top px-md-4">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/logo and name.png" alt="brand name and logo" height="15">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-5">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link active" href="our-services.html">Our Services</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark btn-sm mx-auto d-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET IN TOUCH</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section>
+    <div class="d-flex pt-5 justify-content-center">
+      <div class="line m-3"></div>
+      <h6 class="m-0 text-danger brand-font">What We Do</h6>
+    </div>
+    <div class="container-fluid">
+      <h2 class="display-6 text-center brand-font">Innovative Services Designed for Impact</h2>
+    </div>
+  </section>
+  <div class="container text-center">
+    <p class="text-muted">
+      At Lumva, we are passionate about helping businesses thrive in the digital age. Our range of services is designed to cover every aspect of your digital journey, ensuring that your online presence is powerful, effective, and tailored to meet your unique needs. We understand that every business is different, which is why we offer customized solutions that address your specific challenges and goals. From building stunning websites and mobile apps to crafting targeted marketing campaigns, our team of experts is dedicated to delivering results that drive growth and success.
+    </p>
+  </div>
+
+    <div class="container py-4">  
+      <img src="assets/work.jpg" class="img-fluid" height="600" alt="">
+    </div>
+
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+          <!-- Small screens: select dropdown for services list -->
+          <div class="col-12 d-block d-md-none brand-font">
+              <select class="form-select" id="serviceSelect">
+                  <option value="service1">Websites & Mobile Apps Development</option>
+                  <option value="service2">Custom Software Tailor Made Solutions</option>
+                  <option value="service3">Digital Marketing and Advertising</option>
+                  <option value="service4">Web Setup & Hosting</option>
+                  <option value="service5">Media Production & Graphics Design</option>
+                  <option value="service6">Branding</option>
+              </select>
+          </div>
+          <!-- Large screens: list for services -->
+          <div class="col-md-3 d-none d-md-block brand-font">
+              <ul class="list-unstyled">
+                  <li class="service-item h1 py-3" data-target="service1">Websites & Mobile Apps Development</li>
+                  <li class="service-item h1 py-3" data-target="service2">Custom Software Tailor Made Solutions</li>
+                  <li class="service-item h1 py-3" data-target="service3">Digital Marketing and Advertising</li>
+                  <li class="service-item h1 py-3" data-target="service4">Web Setup & Hosting</li>
+                  <li class="service-item h1 py-3" data-target="service5">Media Production & Graphics Design</li>
+                  <li class="service-item h1 py-3" data-target="service6">Branding</li>
+              </ul>
+          </div>
+          <!-- Service descriptions -->
+          <div class="col-12 col-md-8">
+              <div class="service-description active p-5" id="service1">
+                  <p class="text-muted">In today’s digital world, having a strong online presence is more important than ever. Our skilled team of developers is dedicated to creating custom websites and mobile apps that not only fulfill your specific business needs but also offer an exceptional user experience. From the initial idea and design to development and launch, we use the latest technologies to ensure your digital platforms are modern and ready for the future. Our services include responsive web design, e-commerce solutions, content management systems, and mobile app development for both iOS and Android, ensuring everything works perfectly on any device. We focus on performance, security, and scalability to deliver solutions that truly engage your audience and drive growth.</p>
+              </div>
+              <div class="service-description p-5" id="service2">
+                  <p class="text-muted">Every business is unique, and off-the-shelf software often doesn't quite fit. That's where our custom software development services come in. We create tailor-made solutions that perfectly align with your business goals. Our team works closely with you to understand your specific challenges and requirements, developing software that improves operations, boosts productivity, and gives you a competitive edge. Whether you need a CRM, ERP, inventory management system, or any other specialized application, we ensure the final product is robust, scalable, and seamlessly integrates with your existing systems.</p>
+              </div>
+              <div class="service-description p-5" id="service3">
+                  <p class="text-muted">In an era where your digital presence can make or break your business, our digital marketing and advertising services are designed to help you stand out in a crowded online marketplace. We offer a full range of services, including search engine optimization (SEO), social media marketing, pay-per-click (PPC) advertising, email marketing, and content creation. Our strategies are driven by data and focused on results, ensuring every campaign we run delivers measurable outcomes. By leveraging advanced analytics and precise targeting techniques, we help you reach your ideal audience, increase your brand visibility, and drive quality traffic to your website. Our goal is to turn visitors into loyal customers and passionate advocates for your brand.</p>
+              </div>
+              <div class="service-description p-5" id="service4">
+                <p class="text-muted">A successful website needs more than just great design and functionality; it needs to be reliably accessible and perform well under various conditions. Our web setup and hosting services provide a comprehensive solution to ensure your website is always online, secure, and running at peak performance. We take care of everything from domain registration and server setup to ongoing maintenance and support. Our hosting solutions are scalable, offering shared, VPS, and dedicated hosting options to fit businesses of all sizes. With a strong focus on security, we implement robust measures to protect your data and ensure compliance with industry standards. Our 24/7 support team is always available to address any issues, ensuring your website remains up and running smoothly.</p>
+              </div>
+              <div class="service-description p-5" id="service5">
+                <p class="text-muted">Visual content is key to capturing your audience's attention and effectively conveying your brand message. Our media production and graphics design services are here to create compelling visual content that resonates with your audience and strengthens your brand identity. From eye-catching graphics and infographics to professional video production and photography, our creative team brings your vision to life. We specialize in creating engaging, high-quality visual content for websites, social media, marketing campaigns, and print materials. Whether you need a complete brand makeover or specific marketing collateral, we deliver designs that are not only visually stunning but also strategically aligned with your business objectives.</p>
+              </div>
+              <div class="service-description p-5" id="service6">
+                <p class="text-muted">Your brand is more than just a logo or a tagline; it's the story you tell, the values you uphold, and the promise you make to your customers. Our branding services help you create a powerful and cohesive brand identity that truly reflects who you are and what you stand for. We work with you to develop every aspect of your brand, from your visual identity, including logos and color schemes, to your brand voice and messaging. Our goal is to create a brand that resonates with your audience, builds trust, and sets you apart from the competition. Whether you're starting from scratch or looking to rebrand, we provide the insights and creativity needed to make your brand memorable and impactful.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--get in touch-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="assets/logo.png" alt="brand name" height="20">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead brand-font">Have a project idea?</p> 
+                <p class="h3 text-dark brand-font">Let's discuss it together.</p>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="GIT-first-name" class="form-label">First name:</label>
+                        <input type="text" class="form-control" id="GIT-first-name" placeholder="First name" required>
+                    </div>
+                    <div class="col">
+                        <label for="GIT-last-name" class="form-label">Last name:</label>
+                        <input type="text" class="form-control" id="GIT-last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <label for="GIT-email" class="form-label">Your Email Address:</label>
+                <input type="email" class="form-control" id="GIT-email" placeholder="e.g lumva@example.com" required>
+                <div class="mb-3">
+                    <label for="GIT-message" class="form-label">Your Message:</label>
+                    <textarea class="form-control" id="GIT-message" rows="3" required></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="GIT-checkbox" required>
+                    <label class="form-check-label" for="GIT-checkbox">By clicking the button you agree to our terms and conditions.</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark px-5" id="sendMessageBtn">Send Message</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center text-center py-4">
+        <div class="flex-column">
+            <h1 class="fw-bolder text-dark py-3">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </h1>
+            <p class="small">
+              Stay up-to-date with our latest news and exclusive offers by subscribing to our newsletter today!
+            </p>
+            <div class="input-container d-flex">
+                <input type="email" class="form-control" id="newsletter-email" placeholder="Your Email Address">
+                <button type="button" class="btn btn-dark ms-2 px-3" id="subscribeBtn">Subscribe</button>
+            </div>   
+        </div>     
+  </div>
+
+  <!--footer-->
+  <div class="container-fluid py-2 bg-light-subtle text-dark">
+    <div class="container text-center-md">
+      <div class="row g-5 py-5">
+          <div class="col-md">
+              <img class="mb-2" src="assets/logo.png" alt="brand logo" height="30">
+              <p class="text-muted">We are dedicated to pioneering innovative solutions in technology. <br>Join us as we make the world a better place, one breakthrough at a time.</p>
+              <div>
+                <a href="https://www.instagram.com/trylumva?igsh=ODczd3Z4dXUzbmZ5&utm_source=qr" target="_blank"><img src="assets/instagram.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://www.threads.net/@trylumva?xmt=AQGzR6qqSWVgj0w0QGnYTeWyoGeL_ZUQqvlwGbc116IPmMg" target="_blank"><img src="assets/threads.png" alt="" height="15" class="mx-3"></a>
+                <a href="https://x.com/trylumva?s=21" target="_blank"><img src="assets/twitter.png" alt="" height="15" class="mx-3"></a>
+                <a href="" target="_blank"><img src="assets/facebook.png" alt="" height="15" class="mx-3"></a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Company</p>
+              <div class="links">
+                <a href="about-us.html" class="text-muted">About Us</a><br>
+                <a href="our-services.html" class="text-muted">Our Services</a><br>
+                <a href="" class="text-muted">Terms & Conditions</a><br>
+                <a href="" class="text-muted">Help</a>
+              </div>
+          </div>
+          <div class="col-md">
+              <p class="fw-bolder text-dark">Resources</p>
+              <div class="links">
+                <a href="" class="text-muted">Blog</a><br>
+                <a href="" class="text-muted">Academy</a><br>
+                <a href="" class="text-muted">Support</a><br>
+                <a href="" class="text-muted">Contact Us</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="container text-dark text-center mt-4 copyright brand-font">
+      <p class="pt-3">Lumva &copy; 2024 Lumva</p>
+    </div>
+  </div>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
