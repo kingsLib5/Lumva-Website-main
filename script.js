@@ -173,6 +173,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Function to handle newsletter form submission
+document.getElementById('subscribeBtn').addEventListener('click', function() {
+    const newsletterFormData = {
+        email: document.getElementById('newsletter-email').value,
+        formType: 'newsletter' // Specify the form type as "newsletter"
+    };
+
+    // Check if email is entered
+    if (newsletterFormData.email) {
+        fetch('http://localhost:3000/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newsletterFormData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            document.getElementById('newsletter-email').value = ''; // Clear the email field after submission
+
+            // Refresh the newsletter section by invoking showTable
+            showTable('newsletter'); // Refresh the newsletter data dynamically
+        })
+        .catch(error => console.error('Error:', error));
+    } else {
+        alert('Please enter your email address.');
+    }
+});
+ 
+
 //         // Function to save data to local storage
 //         function saveToLocalStorage(formName, data) {
 //             const existingData = JSON.parse(localStorage.getItem(formName)) || [];
@@ -367,33 +398,3 @@ document.getElementById('sendMessageBtn').addEventListener('click', function() {
     .catch(error => console.error('Error:', error));
 });
 
-// Function to handle newsletter form submission
-document.getElementById('subscribeBtn').addEventListener('click', function() {
-    const newsletterFormData = {
-        email: document.getElementById('newsletter-email').value,
-        formType: 'newsletter' // Specify the form type as "newsletter"
-    };
-
-    // Check if email is entered
-    if (newsletterFormData.email) {
-        fetch('http://localhost:3000/submit-form', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newsletterFormData),
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert(data.message);
-            document.getElementById('newsletter-email').value = ''; // Clear the email field after submission
-
-            // Refresh the newsletter section by invoking showTable
-            showTable('newsletter'); // Refresh the newsletter data dynamically
-        })
-        .catch(error => console.error('Error:', error));
-    } else {
-        alert('Please enter your email address.');
-    }
-});
- 
